@@ -1,0 +1,279 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+/* Barra de Navegación */
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Estilos de la portada */
+.portada {
+    background-image: url('fondodepantalla'); /* Reemplaza con la ruta de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.portada h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.portada p {
+    font-size: 1.4em;
+    margin-bottom: 30px;
+}
+
+.btn-iniciar {
+    background-color: #4CAF50;
+    color: rgb(20, 4, 4);
+    padding: 15px 30px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-iniciar:hover {
+    background-color: #45a049;
+}
+
+/* Contenedor flexible para la sección de Saberes */
+.contenedor-flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.saberes-item {
+    background-color:  #333;
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    border-radius: 8px;
+}
+
+.saberes-item h2 {
+    font-size: 1.8em;
+    color: #fffefe;
+}
+
+.saberes-item p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Sección de contacto */
+#contacto {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+#contacto h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Estilos para las secciones específicas del Primer Cuatrimestre, Segundo Cuatrimestre y Conclusión Final */
+
+/* Estilo común para todas las secciones */
+section {
+    background-color: #000; /* Fondo negro para todas las secciones */
+    color: #fff; /* Texto blanco */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Sombra sutil para dar profundidad */
+}
+
+/* Estilos específicos para cada sección */
+
+/* Primer Cuatrimestre */
+#primer-cuatrimestre {
+    margin-bottom: 20px;
+}
+
+#primer-cuatrimestre h1 {
+    color: #fff; /* Títulos en blanco */
+    font-family: 'Arial', sans-serif;
+}
+
+#primer-cuatrimestre h2 {
+    color: #4e12f3; /* Color dorado para los subtítulos */
+    font-family: 'Arial', sans-serif;
+}
+
+#primercuatrimestre p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+}
+
+#primer-cuatrimestre ul {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-left: 20px;
+}
+
+/* Segundo Cuatrimestre */
+#segundo-cuatrimestre {
+    margin-bottom: 20px;
+}
+
+#segundo-cuatrimestre h1 {
+    color: #fff; /* Títulos en blanco */
+    font-family: 'Arial', sans-serif;
+}
+
+#segundo-cuatrimestre h2 {
+    color: #278eae; /* Verde claro para los subtítulos */
+    font-family: 'Arial', sans-serif;
+}
+
+#segundo-cuatrimestre p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+}
+
+#segundo-cuatrimestre ul {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-left: 20px;
+}
+
+/* Conclusión Final */
+#conclusionfinal {
+    margin-bottom: 20px;
+}
+
+#conclusionfinal h1 {
+    color: #fff; /* Títulos en blanco */
+    font-family: 'Arial', sans-serif;
+}
+
+#conclusionfinal h2 {
+    color: #563ce7; /* Rojo para los subtítulos */
+    font-family: 'Arial', sans-serif;
+}
+
+#conclusionfinal p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+}
+
+#conclusionfinal ul {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-left: 20px;
+}
+
+/* Galería de imágenes y texto */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #000;
+}
+
+.galeria-item {
+    background-color: #333;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.galeria-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.galeria-item h3 {
+    font-size: 1.5em;
+    color: #fff;
+    margin: 15px 0;
+}
+
+.galeria-item p {
+    font-size: 1em;
+    color: #aaa;
+    padding: 0 10px 20px;
+}
+
+
+.gallery {  
+    display: flex; /* Utiliza flexbox para alinear los elementos de la galería en línea. */  
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas si no hay suficiente espacio. */  
+    justify-content: center; /* Centra los elementos de la galería horizontalmente. */  
+    perspective: 1000px; /* Añade perspectiva 3D a los elementos hijos (en este caso, las imágenes). */  
+    margin: 20px 0; /* Añade 20 píxeles de margen superior e inferior a la galería. */  
+}  
+
+.gallery-item {  
+    position: relative; /* Permite que se coloquen elementos absolutamente dentro de este contenedor. */  
+    width: 300px; /* Establece el ancho de cada elemento de la galería a 300 píxeles. */  
+    height: 200px; /* Establece la altura de cada elemento de la galería a 200 píxeles. */  
+    margin: 15px; /* Añade un margen de 15 píxeles alrededor de cada elemento de la galería. */  
+    transition: transform 0.6s; /* Crea una transición suave para la transformación de los elementos (efecto 3D). */  
+    transform-style: preserve-3d; /* Permite que los hijos se coloquen en 3D dentro de este contenedor. */  
+}  
+
+.gallery-item:hover {  
+    transform: rotateY(15deg) rotateX(5deg); /* Aplica una rotación 3D al elemento de la galería cuando se pasa el cursor sobre él. */  
+}  
+
+.gallery-item img {  
+    width: 100%; /* Hace que la imagen ocupe el 100% del ancho de su contenedor. */  
+    height: 100%; /* Hace que la imagen ocupe el 100% de la altura de su contenedor. */  
+    border-radius: 10px; /* Redondea las esquinas de la imagen 10 píxeles. */  
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Añade una sombra de caja a la imagen. */  
+}  
